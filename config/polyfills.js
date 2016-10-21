@@ -6,31 +6,15 @@ if (typeof Promise === 'undefined') {
   window.Promise = require('promise/lib/es6-extensions.js');
 }
 
-if (typeof localStorage === 'undefined') {
-    function storageMock() {
-        var storage = {};
-
-        return {
-            setItem: function(key, value) {
-                storage[key] = value || '';
-            },
-            getItem: function(key) {
-                return storage[key] || null;
-            },
-            removeItem: function(key) {
-                delete storage[key];
-            },
-            get length() {
-                return Object.keys(storage).length;
-            },
-            key: function(i) {
-                var keys = Object.keys(storage);
-                return keys[i] || null;
-            }
-        };
-    }
-
+if (typeof localStorage === 'undefined' || typeof sessionStorage === 'undefined') {
+    // It's insanely likely that if we don't have one, we won't have
+    // the other, so mock them both.
+    // Note: don't just assign `window.sessionStorage = window.localStorage`
+    // as we want to mock browsers somewhat properly and both stores
+    // are independent of each other.
+    var storageMock = require('../src/util/storagemock').storageMock;
     window.localStorage = storageMock();
+    window.sessionStorage = storageMock();
 }
 
 // fetch() polyfill for making API calls.
