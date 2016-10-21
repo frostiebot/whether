@@ -116,20 +116,11 @@ module.exports = {
       // "style" loader turns CSS into JS modules that inject <style> tags.
       // In production, we use a plugin to extract that CSS to a file, but
       // in development "style" loader enables hot editing of CSS.
+      // Now includes sass hotness!
       {
         test: /\.s?[ac]ss$/,
         loader: 'style!css!postcss!sass'
       },
-      // manually added sass loader after ejecting the app from the
-      // react starter kit. Installed `sass-loader` and `node-sass`
-      // as dev dependencies to make it work
-      //{
-      //  test: /\.scss$/,
-      //  include: paths.appSrc,
-      //  loaders: ['style', 'css', 'sass']
-      //},
-      // JSON is not enabled by default in Webpack but both Node and Browserify
-      // allow it implicitly so we also enable it.
       {
         test: /\.json$/,
         loader: 'json'

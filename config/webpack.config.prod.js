@@ -131,15 +131,6 @@ module.exports = {
         loader: ExtractTextPlugin.extract('style', 'css?-autoprefixer!postcss!sass')
         // Note: this won't work without `new ExtractTextPlugin()` in `plugins`.
       },
-      // manually added sass loader after ejecting the app from the
-      // react starter kit. Installed `sass-loader` and `node-sass`
-      // as dev dependencies to make it work
-      //{
-      //  test: /\.scss$/,
-      //  include: paths.appSrc,
-      //  loaders: ['style', 'css', 'sass']
-        // loaders: ExtractTextPlugin.extract('style', 'css?-autoprefixer!postcss', 'sass')
-      //},
       // JSON is not enabled by default in Webpack but both Node and Browserify
       // allow it implicitly so we also enable it.
       {
