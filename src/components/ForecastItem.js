@@ -4,9 +4,7 @@ import moment from 'moment';
 
 import { kelvinToFahrenheit } from '../util';
 
-import 'weather-icons-tmp/css/weather-icons-wind.css';
 import 'weather-icons-tmp/css/weather-icons.css';
-
 import '../stylesheets/components/ForecastItem.scss';
 
 
