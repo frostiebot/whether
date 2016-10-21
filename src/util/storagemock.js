@@ -1,6 +1,6 @@
 // Things that are not browsers don't have either local or session
 // storage - tests in particular. Mock 'em like it's hot.
-function storageMock() {
+export function storageMock() {
     var storage = {};
 
     return {
@@ -22,7 +22,3 @@ function storageMock() {
         }
     };
 }
-
-module.exports = {
-    storageMock: storageMock
-};

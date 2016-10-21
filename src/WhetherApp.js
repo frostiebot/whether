@@ -5,7 +5,9 @@ import ForecastList from './ForecastList';
 
 import './WhetherApp.scss';
 
-import getFiveDayForecastData from './api';
+// import getFiveDayForecastData from './api';
+
+import * as api from './api';
 
 
 class WhetherApp extends Component {
@@ -15,7 +17,7 @@ class WhetherApp extends Component {
     }
 
     componentDidMount() {
-        getFiveDayForecastData().then((data) => {
+        api.getFiveDayForecast().then((data) => {
             this.setState({data: data});
         });
     }
