@@ -1,13 +1,10 @@
 import React, { Component } from 'react';
 
-import Loading from './Loading';
-import ForecastList from './ForecastList';
+import { Loading, ForecastList } from '../components';
 
-import './WhetherApp.scss';
+import '../stylesheets/app/WhetherApp.scss';
 
-// import getFiveDayForecastData from './api';
-
-import * as api from './api';
+import * as api from '../api';
 
 
 class WhetherApp extends Component {

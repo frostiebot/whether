@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import WhetherApp from './WhetherApp';
+import WhetherApp from './app/WhetherApp';
 
-import './index.css';
+import './stylesheets/index.scss';
 
 ReactDOM.render(
     <WhetherApp />,

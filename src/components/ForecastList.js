@@ -1,5 +1,3 @@
-/*eslint no-console: ["error", { allow: ["warn", "error"] }] */
-
 import React, { Component } from 'react';
 
 import ForecastItem from './ForecastItem';

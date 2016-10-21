@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import moment from 'moment';
 
-import { kelvinToFahrenheit } from './util';
+import { kelvinToFahrenheit } from '../util';
 
 import 'weather-icons-tmp/css/weather-icons-wind.css';
 import 'weather-icons-tmp/css/weather-icons.css';
