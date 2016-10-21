@@ -36,13 +36,7 @@ The build is minified and the filenames include the hashes.
 
 ### `npm run deploy`
 
-Deploys the app to to github pages<br>
-Note that doing so causes github to "forget" the custom domain mapping
-I have set up to allow non-ssl connections to work for OWM's crappy API.
-
-So, basically, please don't deploy. I don't think you can anyway.
-
-COME AT ME, BRO!
+Deploys the app to to github pages under the custom domain http://whether.harml.us
 
 ## Notes
 
