@@ -7,7 +7,7 @@ class Loading extends Component {
     render() {
         return (
             <div className="loading">
-                <p className="loading-spinner">
+                <p className="loading-text">
                     LOADING
                 </p>
             </div>
