@@ -1,0 +1,8 @@
+@import "bourbon";
+@import "neat";
+
+.whether-app {
+    .forecast-list-container {
+        @include outer-container;
+    }
+}

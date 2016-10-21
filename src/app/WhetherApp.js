@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 
 import { Loading, ForecastList } from '../components';
 
-import '../stylesheets/app/WhetherApp.scss';
-
 import * as api from '../api';
+
+import '../stylesheets/app/WhetherApp.scss';
 
 
 class WhetherApp extends Component {

@@ -1,0 +1,61 @@
+@import "bourbon";
+@import "neat";
+
+$nice-blue: #53aee0;
+$medium-screen: em(768);
+
+.whether-app {
+    .forecast-item {
+        border: 1px solid #cacaca;
+        border-radius: 2px;
+        background-color: #fff;
+        border-left-width: 0;
+        border-right-width: 0;
+
+        margin-bottom: 20px;
+
+        @include media($medium-screen) {
+            @include span-columns(2.4);
+            border-bottom-color: #f3f3f3;
+        }
+
+        h2 {
+            background: tint($nice-blue, 40%);
+            color: shade($nice-blue, 40%);
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+        .forecast-temp {
+            @include linear-gradient($nice-blue, #3da4dc);
+            border: 1px solid shade($nice-blue, 20%);
+            border-left-width: 0;
+            border-right-width: 0;
+            color: #fff;
+            font-size: 68px;
+            line-height: 1.33em;
+            margin: 0;
+            padding: 10px 0;
+            text-shadow: 0 2px 2px rgba(0,0,0,0.15);
+
+            i {
+                vertical-align: top;
+            }
+        }
+
+        .forecast-description {
+            background: tint($nice-blue, 90%);
+            font-size: 18px;
+            line-height: 32px;
+            margin: 0;
+            padding: 6px 12px;
+            text-align: left;
+            text-transform: capitalize;
+
+            i {
+                margin-right: 12px;
+                font-size: 22px;
+            }
+        }
+    }
+}

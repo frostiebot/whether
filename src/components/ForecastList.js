@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 
 import ForecastItem from './ForecastItem';
 
+import '../stylesheets/components/ForecastList.scss';
+
 
 class ForecastList extends Component {
     render() {
